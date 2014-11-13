@@ -1,0 +1,24 @@
+<h1>Edit a sport</h1>
+
+<div class="form">
+  <%= form_tag(sport_path(@sport["id"]), :method => :patch) do %>
+    <fieldset>
+      <%= label_tag :name %>
+      <%= text_field_tag :name, @sport["name"] %><br/>
+
+      <%= label_tag :players %>
+      <%= text_field_tag :players, @sport["players"] %><br/>
+
+      <%= label_tag :description %>
+      <%= text_field_tag :description, @sport["description"] %><br/>
+
+      <%= label_tag :court %>
+      <%= text_field_tag :court, @sport["court"] %><br/>
+
+      <%= label_tag :created_in %>
+      <%= text_field_tag :created_in, @sport["created_in"] %><br/>
+
+      <%= submit_tag "Update sport" %>
+    </fieldset>
+  <% end %>
+</div>
