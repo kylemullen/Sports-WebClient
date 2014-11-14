@@ -1,14 +1,8 @@
 <% @sports.each do |sport| %>
 
-  <h1>Sport Name: <%= sport["name"] %></h1>
-  <h2>Players: <%= sport["players"] %> </h2>
-  <h4>Court Used for Play: <%= sport["court"] %></h4>
-
-  <h5>Description: <%= sport["description"] %> </h5>
-  <h5>Origin: <%= sport["created_in"] %>  </h5>
-
-
-
-
+  <h1>Sport Name: <%= sport.name %></h1>
+  
+  <h2>Overview: </h2>
+  <h4><%= sport.full_sport %> </h4>
 
 <% end %>
